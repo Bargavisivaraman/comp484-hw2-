@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Introduction to HTML</title>
+<link href="_css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header role="banner">
+  <h1>Comp 484</h1>
+  <h2>Structuring Pages</h2>
+
+  <nav role="navigation">
+    <ul>
+      <li><a href="index.html">Introduction to HTML</a></li>
+      <li><a href="syntax.html">HTML syntax</a></li>
+      <li><a href="structure.html">Structuring pages</a></li>
+      <li><a href="links.html">Creating links</a></li>
+      <li><a href="reference.html">HTML reference</a></li>
+      <li><a href="next.html">Next steps</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main role="main">
+  <article>
+
+    <header>
+      <h3>Conveying meaning through structure</h3>
+      <p>
+        Creating properly structured pages is the foundation of any good website.
+        A solid semantic structure allows you to convey meaning and properly
+        represent content types through nothing more than the page's markup.
+        <em>Without a consistent, semantic structure your site will be less effective.</em>
+      </p>
+    </header>
+
+    <!-- ✅ IMAGE INSERTED HERE -->
+    <figure>
+      <img src="images/tags.png" alt="Diagram showing semantic HTML elements such as header, nav, main, section, article, aside, and footer">
+      <figcaption>
+        Diagram illustrating the semantic structure used throughout the HW website.
+      </figcaption>
+    </figure>
+
+    <section>
+      <h3>Sectioning elements</h3>
+      <p>
+        One way to add meaning to your content is to organize it into sections
+        that convey meaning and structure.
+      </p>
+
+      <p>
+        In previous versions of HTML, content was grouped using heading tags and
+        divs. HTML5 introduced semantic elements like <b>article</b>, <b>section</b>,
+        <b>nav</b>, <b>header</b>, <b>footer</b>, and <b>aside</b> to improve clarity
+        and accessibility.
+      </p>
+    </section>
+
+    <section>
+      <h3>Document outlines</h3>
+      <p>
+        HTML documents can be represented by a document outline that summarizes
+        page structure and improves accessibility.
+      </p>
+
+      <aside role="complementary">
+        <h4>W3C Warning</h4>
+        <blockquote>
+          Authors are advised to use heading rank (h1-h6) to convey document structure.
+        </blockquote>
+      </aside>
+    </section>
+
+    <section>
+      <h3>WAI-ARIA Roles</h3>
+      <p>
+        ARIA roles help assistive technologies understand page structure and behavior.
+      </p>
+    </section>
+
+  </article>
+</main>
+
+<footer role="contentinfo">
+  <p>
+    <a href="http://www.csun.edu" target="_blank">CSUN</a>
+    18111 Nordhoff St Northridge, CA 91330
+  </p>
+</footer>
+
+</body>
+</html>

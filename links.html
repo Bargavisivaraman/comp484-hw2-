@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Creating Links</title>
+  <link href="_css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <!-- PAGE HEADER -->
+  <header role="banner">
+    <h1>Comp 484</h1>
+    <h2>Creating Links</h2>
+
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html" title="Introduction to HTML">Introduction to HTML</a></li>
+        <li><a href="syntax.html" title="HTML syntax">HTML syntax</a></li>
+        <li><a href="structure.html" title="Structuring pages">Structuring pages</a></li>
+        <li><a href="links.html" title="Creating links">Creating links</a></li>
+        <li><a href="reference.html" title="HTML Reference">HTML reference</a></li>
+        <li><a href="next.html" title="Next steps">Next steps</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main role="main">
+    <article>
+
+      <section>
+        <h3>Link syntax</h3>
+        <p>
+          Perhaps the most important aspect of HTML is the ability to link from
+          one document to another. Creating links is relatively straightforward,
+          and the syntax provides a lot of flexibility.
+        </p>
+
+        <p>Take the following link example:</p>
+
+        <pre>
+&lt;a href="syntax.html" title="learn more about syntax"&gt;HTML syntax&lt;/a&gt;
+        </pre>
+
+        <p>
+          Here the text <b>HTML syntax</b> would now appear as a clickable link.
+          The <b>href</b> attribute defines where the link points to.
+        </p>
+      </section>
+
+      <section>
+        <h3>Link types</h3>
+
+        <h4>Absolute links</h4>
+        <p>
+          These links contain the entire URL necessary to resolve a link,
+          including the protocol.
+        </p>
+
+        <pre>
+&lt;a href="http://www.google.com" title="Google"&gt;Google&lt;/a&gt;
+        </pre>
+
+        <h4>Document relative links</h4>
+        <p>
+          These links are commonly used to navigate internally within a site.
+        </p>
+
+        <pre>
+&lt;a href="contact.html" title="Contact page"&gt;Contact us&lt;/a&gt;
+        </pre>
+
+        <pre>
+&lt;a href="resources/contact.html" title="Contact page"&gt;Contact us&lt;/a&gt;
+        </pre>
+
+        <pre>
+&lt;a href="../contact.html" title="Contact page"&gt;Contact us&lt;/a&gt;
+        </pre>
+
+        <h4>Site-root relative links</h4>
+        <p>
+          These links are similar to document relative links, but start at the
+          root folder of the site.
+        </p>
+
+        <pre>
+&lt;a href="/contact.html" title="Contact page"&gt;Contact us&lt;/a&gt;
+        </pre>
+
+        <pre>
+&lt;a href="/resources/contact.html" title="Contact page"&gt;Contact us&lt;/a&gt;
+        </pre>
+      </section>
+
+      <section>
+        <h3>Fragment identifiers</h3>
+        <p>
+          Occasionally you’ll want a link to refer to a specific location within
+          a page.
+        </p>
+
+        <pre>
+&lt;h2 id="campus"&gt;Camping&lt;/h2&gt;
+        </pre>
+
+        <p>You can link to it like this:</p>
+
+        <pre>
+&lt;a href="#campus"&gt;Learn more about camping&lt;/a&gt;
+        </pre>
+
+        <p>
+          The hash symbol (<b>#</b>) tells the browser to look for an element with
+          the matching <b>id</b> value.
+        </p>
+
+        <pre>
+&lt;a href="faq.html#camp"&gt;Read our FAQ on camping&lt;/a&gt;
+        </pre>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- PAGE FOOTER -->
+  <footer role="contentinfo">
+    <p>
+      <a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a>
+      18111 Nordhoff St Northridge, CA 91330
+    </p>
+  </footer>
+
+</body>
+</html>
