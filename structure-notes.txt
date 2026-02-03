@@ -1,0 +1,15 @@
+Document Structure Strategy:
+
+The site uses a semantic HTML5 structure based on the structure.html example.
+
+Overall layout:
+- header: site title and navigation
+- nav: primary navigation menu
+- main: main page content
+- section: grouped content areas
+- article: self-contained content blocks
+- aside: complementary information
+- footer: site footer information
+
+See semantic structure diagram:
+images/semantic-structure-diagram.png
